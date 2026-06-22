@@ -17,7 +17,7 @@ export const profile = {
 export const summary = `I'm a Computer Science graduate who enjoys turning ideas into simple, functional applications with Python and Java. I have hands-on experience in software development, data analysis and machine learning — from OOP and SQL to Pandas, NumPy and Scikit-learn. I'm eager to keep learning and contribute to real-world projects that value clean, reliable code.`;
 
 export const highlights = [
-  { value: "4+", label: "Hands-on projects" },
+  { value: "5+", label: "Hands-on projects" },
   { value: "2", label: "Core languages" },
   { value: "B.Tech", label: "Computer Science" },
   { value: "2024", label: "Python internship" },

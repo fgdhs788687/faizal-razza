@@ -2,20 +2,20 @@
 #set document(title: "Md Faizal Razza — Resume", author: "Md Faizal Razza")
 #set page(
   paper: "a4",
-  margin: (x: 1.4cm, y: 1.2cm),
+  margin: (x: 1.4cm, y: 0.9cm),
 )
-#set text(font: "New Computer Modern", size: 10pt, fill: rgb("#1a1a1a"))
-#set par(justify: true, leading: 0.55em)
+#set text(font: "New Computer Modern", size: 9.5pt, fill: rgb("#1a1a1a"))
+#set par(justify: true, leading: 0.45em)
 
 #let accent = rgb("#1f3a93")
 
 // ---- Section heading helper ----
 #let section(title) = [
-  #v(6pt)
+  #v(4pt)
   #text(size: 11pt, weight: "bold", fill: accent, tracking: 0.5pt)[#upper(title)]
   #v(-4pt)
   #line(length: 100%, stroke: 0.6pt + accent)
-  #v(2pt)
+  #v(1pt)
 ]
 
 // ---- Entry header: title left, dates right ----
@@ -65,6 +65,14 @@ Computer Science graduate (B.Tech, 2025) with hands-on experience in Python and 
 
 // =================== PROJECTS ===================
 #section("Projects")
+#entry[Aethro AI — Full Stack AI Chatbot][React, Flask, Docker, OpenRouter API]
+- Built a full-stack AI chatbot with a React/Vite frontend and Python Flask backend, integrated with a 120B-parameter LLM via OpenRouter API.
+- Implemented real-time response streaming using Server-Sent Events (SSE) so output appears word by word.
+- Persisted conversation history in SQLite, built an animated day/night sky UI in pure CSS, and deployed via Docker on Hugging Face Spaces.
+#v(3pt)
+#entry[Student CGPA Calculator][React, Vite, JavaScript]
+- Built a client-side CGPA calculator in React/Vite with grade conversion, percentage calculation, and modular logic helpers.
+#v(3pt)
 #entry[Algerian Forest Fires — FWI Prediction][Python, scikit-learn]
 - Built and evaluated a regression model to predict the Fire Weather Index from meteorological data.
 - Engineered features with scaling and categorical encoding; compared Linear, Ridge, Lasso and ElasticNet to cut overfitting.
@@ -85,8 +93,9 @@ Computer Science graduate (B.Tech, 2025) with hands-on experience in Python and 
   columns: (auto, 1fr),
   row-gutter: 4pt,
   column-gutter: 8pt,
-  text(weight: "bold")[Languages], [Python, Java, SQL],
+  text(weight: "bold")[Languages], [Python, Java, JavaScript, SQL],
   text(weight: "bold")[ML / Data], [scikit-learn, Pandas, NumPy, Matplotlib, Seaborn, EDA, Regression],
-  text(weight: "bold")[Backend / DB], [MySQL, OOP, REST fundamentals, Data Structures & Algorithms],
-  text(weight: "bold")[Tools], [Git, GitHub, Jupyter, VS Code, Eclipse, Linux],
+  text(weight: "bold")[Web & Backend], [React, Vite, Flask, REST APIs, SQLite, MySQL, HTML, CSS],
+  text(weight: "bold")[DevOps], [Docker, Git, GitHub, Hugging Face Spaces],
+  text(weight: "bold")[Tools], [Jupyter, VS Code, Eclipse, Linux],
 )
