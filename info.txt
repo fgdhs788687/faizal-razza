@@ -1,0 +1,1 @@
+when ever ur done with updating the resume in the Faizal_Razza_Resume.typ to compile just run .\compile-resume.ps1 in the terminal thats all.
